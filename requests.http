@@ -1,0 +1,20 @@
+### Users create (signup)
+POST http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU0NTY0NzV9.bFRSXOdy4a--fFS0vBUpsw59jUumcd7CRGNZZbayVJU
+Content-Type: application/json
+
+{
+  "name": "Bason Journe",
+  "email": "Bason@Journe.com",
+  "password": "password2",
+  "password_confirmation": "password2"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "Jason@Bourne.com",
+  "password": "password"
+}
